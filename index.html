@@ -312,9 +312,9 @@
             // 1. 严格对应问卷星的题目名（必须完全一致！）
             const params = new URLSearchParams();
             // 问卷星传参规则：参数名=题目名，参数值=要填充的内容
-            params.append('专注时长', seconds);
-            params.append('揉捏次数', count);
-            params.append('专注度', focusSlider.value);
+            params.append('q1', seconds);
+            params.append('q2', count);
+            params.append('q3', focusSlider.value);
 
             // 2. 正确拼接URL，避免乱码
             const targetUrl = `${WJX_URL}?${params.toString()}`;
